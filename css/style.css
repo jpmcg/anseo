@@ -1,0 +1,351 @@
+body, html, .container-fluid h3 {
+	font-family: 'Roboto', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #777;
+	font-weight: 300;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+hr{
+	border-top:1px solid #ccc;
+	padding: 20px 0;
+}
+
+.container-fluid h3{
+	padding-top: 10px;
+	font-size: 36pt;
+	font-weight: 400;
+	color: #000;
+	padding-bottom: 40px;
+}
+
+p{
+	font-size: 15pt;
+}
+
+/*NAV */
+#menu {
+	padding: 10px;
+	transition: all 0.8s;
+}
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 1);
+	border-color: rgba(231, 231, 231, 0);
+	border-bottom: 1px solid #B6BC96;
+}
+#menu a.navbar-brand {
+	font-size: 22px;
+	color: #555;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #B6BC96;
+	color: #fff;
+	color: #555;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 5px 0;
+	border: 2px solid transparent;
+	letter-spacing: 0.5px;
+	margin: 10px 15px 0 15px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #ccc;
+}
+.xon {
+	background-color: #363636 !important;
+	padding: 0 !important;
+	padding: 10px 0 !important;
+}
+
+/*NAV MENU OVERRIDE*/
+nav#menu.navbar-default.on{    
+    background-color: #fff;
+    padding:  10px;
+    border-bottom: 1px solid #B6BC96;
+}
+
+#menu.on a.navbar-brand{
+    color: #555;
+}
+
+#menu.navbar-default.on .navbar-nav > li > a{
+	color: #555;
+	font-weight: 400;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	/* color: #eee !important; */
+	color: #B6BC96 !important;
+	background-color: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #B6BC96;
+	border-color: #B6BC96;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
+.section-title {
+	margin-bottom: 70px;
+}
+.section-title p {
+	font-size: 18px;
+}
+.btn-custom {
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 0 3px #859c3c;
+	background-color: #B6BC96;
+	border: 0;
+	padding: 14px 20px;
+	margin: 0;
+	font-size: 17px;
+	border-radius: 12px 0 12px 0;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+/* header */
+
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/exterior3a.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.intro .overlay {
+	/* background: rgba(255,255,255,0.1); */
+}
+.intro h1 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.intro h2 {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.carousel-caption h3 {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.intro span {
+	color: #B6BC96;
+	font-weight: 600;
+}
+.intro p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.carousel-caption p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+header .intro-text {
+	padding-top: 300px;
+	padding-bottom: 200px;
+	text-align: center;
+}
+
+/* About */
+.about{
+	padding: 50px 20px 20px 50px;
+}
+
+.about, .rooms, .breakfast{
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+.about{
+	padding-bottom: 0px;
+}
+
+.image-col{
+	padding: 0;
+}
+
+.rooms, .breakfast{
+	background-color: #F5F5F5;
+	padding-top: 150px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+.breakfast{
+	padding-top: 0px;
+	padding-bottom: 120px;
+}
+
+.round-corners{
+	border-radius: 5px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../img/intro06.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-shadow{
+	box-shadow: 8px 8px 40px 5px rgba(0,0,0,.08);
+}
+
+.info{
+	background-color:#fff;
+	padding: 60px 60px;
+}
+
+.room-info{
+	position:relative;
+	top: -50px;
+	left: -80px;
+}
+
+.breakfast-info{
+	position:relative;
+	top: 130px;
+	left: 80px;
+}
+
+.no-padding{
+	padding:0;
+}
+
+.icons{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.white-block{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.room-box{
+	margin-bottom: 30px;
+}
+
+.carousel-caption{
+	top: 300px;
+}
+
+footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+footer a{	
+	color: #777;
+}
+
+footer a:hover{	
+	color: #777;
+}
+
+/**** Rooms Page ****/
+
+
+.rooms-intro{
+	background: url(../img/bed0301.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.rooms-outer{
+	padding: 20px;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+.rooms-main{
+	background-color: #F5F5F5;
+	padding: 50px;
+}
+
+.rooms-outer > h4{
+	padding-top: 20px;
+}
+
+
+
+.anseo-link{	
+	color: #777;
+}
+
+.anseo-link:hover{	
+	color: #777;
+}
+
+/**** BREAKFAST PAGE *****/
+
+
+.breakfast-intro{
+	background: url(../img/breakfast02.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+ul{
+	text-align: left;
+}
+
+ul > li{
+	margin-bottom: 5px; 
+	font-size: 20px;
+}
+
+.food-image{
+	padding: 0px;
+	border:10px solid #fff;
+}

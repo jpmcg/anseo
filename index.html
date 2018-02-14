@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?v=2" rel="stylesheet">
+    <link href="css/style-sm.css?v=1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fade.css">
+    <!-- <link rel="stylesheet" href="css/kenburnss.css"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+    .custom-icon {
+  background: #B6BC96;
+  /* background: rgba(0, 0, 0, 0.4); */
+  border-radius: 100%;
+  border: 6px solid #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  color: #fff;
+  display: table-cell;
+  font-size: 45px;
+  height: 60px;
+  padding: 30px;
+  text-align: center;
+  transition: .5s;
+  vertical-align: middle;
+  width: 60px;
+}
+.custom-icon:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.fix-editor {
+  display: none;
+}
+.icon-wrapper {
+  display: inline-block;
+}
+
+.trip-advisor{
+    display: inline-block;
+    border: 1px solid #333;
+}
+
+.trip-advisor > p{
+    font: normal 12px Arial,Helvetica,sans-serif;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.12px;
+    color: #000;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+</style>
+</head>
+
+<body>
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand page-scroll" href="index.html">Anseo B&B</a>
+             </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="rooms.html" class="page-scroll">Rooms</a></li>
+                     <li><a href="breakfast.html" class="page-scroll">Breakfast</a></li>
+                     <li><a href="rates.html" class="page-scroll">Rates</a></li>
+                     <!-- <li><a href="#team" class="page-scroll">Team</a></li> -->
+                    <li><a href="contact.html" class="page-scroll">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+    </nav>
+    <!-- Header -->
+    
+    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel" style="max-height:650px;">            
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">  
+                            <div class="image"></div>
+                            <div class="carousel-caption">
+                              <h3>ANSEO B&amp;B</h3>
+                              <p>THE HOMELY BED AND BREAKFAST IN DUNFANAGHY</p>
+                              <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="item"> 
+                            <div class="image"></div>
+                            <div class="carousel-caption">
+                                    <h3>ANSEO B&amp;B</h3>
+                                    <p>Beautiful en-suite rooms</p>
+                                    <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                                  </div>
+                        </div>
+                        <div class="item"> 
+                            <div class="image"></div>
+                            <div class="carousel-caption">
+                                    <h3>ANSEO B&amp;B</h3>
+                                    <p>Breakfast of fresh, local produce</p>
+                                    <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                                  </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+   
+                <div id="about" class="container-fluid about text-center">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2" style="padding-bottom:20px;">
+                    <hr>
+                    <h3>Welcome To<br>Anseo Bed and Breakfast</h3>
+                    <p>We are very proud of Anseo, our Bed & Breakfast on the outskirts of the picturesque village of Dunfanaghy
+                        in north-west Donegal.
+                    </p>
+                    <a href="rooms.html">
+                            <div class="btn btn-custom">SEE OUR ROOMS</div>
+                    </a>                   
+                    <hr style="margin-top:80px;margin-bottom:0px;padding-bottom:0px;">
+                    <div class="col-xs-12">
+                        <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor">
+                                <p>Certificate of Excellence<br/>2017</p>
+                                <img src="img/trip-advisor2a.jpg" alt="Trip Advisor Certificate of Excellence 2017" class="img-responsive center-block"/>  
+                            </div>
+                        </a>
+                    </div>
+
+            </div>              
+        </div>
+    </div>
+ 
+    <div class="container-fluid rooms">
+        <div class="col-sm-6 no-padding">
+            <img src="img/hall01.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+            <div class="round-corners info room-info box-shadow">
+                <h4 style="font-size:18pt;">Traditional Styling..</h4>
+                <p>Anseo is a lovely traditional Donegal building, and we hope you like it, but the most important thing to us is ensuring you are given a warm welcome, which lasts the duration of your stay and endures long after you have left us.</p>
+                <a href="rooms.html">
+                <div class="btn btn-custom">SEE OUR ROOMS</div>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="container white-block text-center">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2" style="padding-bottom: 50px;">
+                  
+                        <h3>Great Nights Sleep...</h3>
+                        <p class="">All the rooms feature a large king-size bed, with high quality “Sealy” mattresses, a flat-screen television with all the channels that the Freesat system provides, and tea and coffee making facilities.</p>                  
+                </div>      
+                <div class="col-sm-4 col-sm-offset-2">
+                    <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
+                        <img src="img/bed0101.jpg" alt="" class="img-responsive">                        
+                    </div>
+                </div>            
+                <div class="col-sm-4">
+                    <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
+                        <img src="img/bed0201.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>            
+                <div class="col-sm-4 col-sm-offset-2">
+                    <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
+                        <img src="img/bed0301.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>            
+                <div class="col-sm-4">
+                    <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
+                        <img src="img/bed0401.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>            
+            </div>
+    </div>
+    <div class="container-fluid breakfast">
+            <div class="col-sm-6 no-padding col-sm-push-6">
+                <img src="img/intro04.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <div class="round-corners info breakfast-info box-shadow">
+                    <h4 style="font-size:18pt;">The Finest Breakfast..</h4>
+                    <p>With so much to do in Dunfanaghy and the surrounding area, set yourself up for the day, with a delicious Anseo Breakfast - the perfect start to any day</p>
+                    <a href="breakfast.html">
+                            <div class="btn btn-custom">BREAKFAST OPTIONS</div>
+                    </a>
+                </div>
+            </div>
+    </div>
+
+    <div class="container-fluid text-center icons">
+            <div class="col-sm-3">
+                    <div class="icon-wrapper"><i class="fa fa-bed custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+                    <h4>Luxury Rooms</h4>                     
+                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+            </div>            
+            <div class="col-sm-3">
+                    <div class="icon-wrapper"><i class="fa fa-cutlery custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+                    <h4>Great Breakfast</h4>                     
+                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+            </div>            
+            <div class="col-sm-3">
+                    <div class="icon-wrapper"><i class="fa fa-location-arrow custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+                    <h4>Fantastic Location</h4>                     
+                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+            </div>            
+            <div class="col-sm-3">
+                    <div class="icon-wrapper"><i class="fa fa-home custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
+                    <h4>Beautiful Cottage</h4>                     
+                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+            </div>            
+    </div>
+    <div class="parallax"></div>
+    <footer class="container">
+            <div class="col-xs-6 text-right" style="padding-right: 20px;">
+                <h4>Tatu Anseo<br/>Bed & Breakfast</h4>
+                <p>Dunfanaghy, County Donegal
+                        <span class="fa-stack">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-address-card fa-stack-1x"></i>
+                        </span>
+                </p>
+                <p>(+353) 74 91 36 609
+                    <span class="fa-stack">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-phone fa-stack-1x"></i>
+                    </span>
+                </p>
+                <p>info@tatuanseo.com
+                    <span class="fa-stack">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="col-xs-6 text-left" style="padding-left: 20px;">
+                <h4 style="padding-bottom: 20px;">Useful Links</h4>
+                <a href="rooms.html">
+                    <p>Our Rooms</p>
+                </a>
+                <a href="breakfast.html">
+                    <p>Breakfast</p>
+                </a>
+                <a href="rates.html">
+                    <p>Rates</p>
+                </a>
+                <a href="contact.html">
+                    <p>Contact</p>
+                </a>                                          
+            </div>
+        </footer>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+            $('#carouselFade').carousel({
+                pause: "false"
+            });
+          //  $('#carouselFade').carousel('pause');
+    </script>
+</body>
+
+</html>
