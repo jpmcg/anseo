@@ -6,69 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Bed and Breakfast Dunfanaghy - Anseo B&B</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css?v=2" rel="stylesheet">
-    <link href="css/style-sm.css?v=1" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pickadate/classic.css" rel="stylesheet">
+    <link href="css/pickadate/classic.date.css" rel="stylesheet">
+    <link href="css/style.css?v=4" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <script src="js/wow.js"></script>
+    <script>
+            new WOW().init();
+    </script>
+
     <link rel="stylesheet" href="css/fade.css">
-    <!-- <link rel="stylesheet" href="css/kenburnss.css"> -->
+    <link rel="stylesheet" href="css/kenburns.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-<style>
-    .custom-icon {
-  background: #B6BC96;
-  /* background: rgba(0, 0, 0, 0.4); */
-  border-radius: 100%;
-  border: 6px solid #fff;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
-  color: #fff;
-  display: table-cell;
-  font-size: 45px;
-  height: 60px;
-  padding: 30px;
-  text-align: center;
-  transition: .5s;
-  vertical-align: middle;
-  width: 60px;
-}
-.custom-icon:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
-.fix-editor {
-  display: none;
-}
-.icon-wrapper {
-  display: inline-block;
-}
 
-.trip-advisor{
-    display: inline-block;
-    border: 1px solid #333;
-}
-
-.trip-advisor > p{
-    font: normal 12px Arial,Helvetica,sans-serif;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: -0.12px;
-    color: #000;
-    padding-top: 5px;
-    margin-bottom: 0px;
-}
-
-</style>
 </head>
 
 <body>
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top wow fadeIn">
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -79,6 +44,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="dunfanaghy.html" class="page-scroll">Dunfanaghy</a></li>
                     <li><a href="rooms.html" class="page-scroll">Rooms</a></li>
                      <li><a href="breakfast.html" class="page-scroll">Breakfast</a></li>
                      <li><a href="rates.html" class="page-scroll">Rates</a></li>
@@ -91,7 +57,7 @@
     </nav>
     <!-- Header -->
     
-    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel" style="max-height:650px;">            
+    <div id="carouselFade" class="carousel slide carousel-fade wow fadeIn" data-ride="carousel" style="max-height:650px;">            
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">  
@@ -99,7 +65,7 @@
                             <div class="carousel-caption">
                               <h3>ANSEO B&amp;B</h3>
                               <p>THE HOMELY BED AND BREAKFAST IN DUNFANAGHY</p>
-                              <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                              <a href="#about" class="btn btn-custom btn-lg page-scroll">Book Here</a>
                             </div>
                         </div>
                         <div class="item"> 
@@ -107,7 +73,7 @@
                             <div class="carousel-caption">
                                     <h3>ANSEO B&amp;B</h3>
                                     <p>Beautiful en-suite rooms</p>
-                                    <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                                    <a href="#about" class="btn btn-custom btn-lg page-scroll">Book Here</a>
                                   </div>
                         </div>
                         <div class="item"> 
@@ -115,7 +81,7 @@
                             <div class="carousel-caption">
                                     <h3>ANSEO B&amp;B</h3>
                                     <p>Breakfast of fresh, local produce</p>
-                                    <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                                    <a href="#about" class="btn btn-custom btn-lg page-scroll">Book Here</a>
                                   </div>
                         </div>
                     </div>
@@ -132,32 +98,80 @@
                 </div>
 
    
-                <div id="about" class="container-fluid about text-center">
+    <div id="about" class="container-fluid about text-center wow fadeIn">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2" style="padding-bottom:20px;">
-                    <hr>
-                    <h3>Welcome To<br>Anseo Bed and Breakfast</h3>
-                    <p>We are very proud of Anseo, our Bed & Breakfast on the outskirts of the picturesque village of Dunfanaghy
-                        in north-west Donegal.
+                    <!-- <div class="col-xs-12">
+                        <div class="center-block" id="f2b-widget"><script src="https://www.freetobook.com/affiliates/dynamicWidget/js/widget-js.php?w_id=8778&amp;w_tkn=pf7ow3xkFhNhMGIwedOBgRsW4pv40mFFXSXcwRxsbhwZnyYoBIZJ7Oa2W2XBT&amp;w_new=1" type="text/javascript"></script></div>
+                    </div> -->  
+                    <p> <br> </p>              
+                    <h1>Luxury Bed & Breakfast Dunfanaghy</h1>
+
+                    <div id="availability-form-holder" class="col-xs-12">
+                        <!-- <form method="POST" action="https://portal.freetobook.com/widget-redir?w_id=8778&w_tkn=pf7ow3xkFhNhMGIwedOBgRsW4pv40mFFXSXcwRxsbhwZnyYoBIZJ7Oa2W2XBT" target="_blank">
+                                <div class="form-group">
+                                  <label for="checkIn">Date</label>
+                                  <input type="" class="datepicker form-control" id="checkIn" name="checkIn">
+                                </div>
+                                <div class="form-group">
+                                  <label for="stayLength">Number of Nights</label>
+                                  <input type="number" class="form-control" name="stayLength" id="stayLength" placeholder="Password">
+                                </div>
+                                <input type="submit">Search</input>
+                        </form> -->
+                        <!-- <hr/> -->
+                        <form method="POST" id="availability-form" class="form-inline" action="https://portal.freetobook.com/widget-redir?w_id=8778&w_tkn=pf7ow3xkFhNhMGIwedOBgRsW4pv40mFFXSXcwRxsbhwZnyYoBIZJ7Oa2W2XBT" target="_blank">
+                                <div class="form-group">
+                                  <label class="sr-only" for="checkIn">Check In Date</label>
+                                  <input type="text" class="datepicker form-control input-lg" id="checkIn" name="checkIn" placeholder="Check In Date...">
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only" for="stayLength">Number of Nights</label>
+                                  <input type="number" class="form-control input-lg" name="stayLength" id="stayLength" id="exampleInputPassword3" placeholder="Nights...">
+                                </div>
+                                <button type="submit" class="btn btn-default input-lg availability-btn">Check Availability</button>
+                        </form>
+                </div>
+
+                    <p class="room-box">We are very proud of Anseo, our Bed & Breakfast on the outskirts
+                         of the picturesque village of Dunfanaghy
+                        in north-west Donegal, in one of the most rugged, scenic and fascinating parts of Ireland, and 
+                        ideally situated to explore the many beaches, mountains, forests and local culture for which the area is famous.
                     </p>
-                    <a href="rooms.html">
-                            <div class="btn btn-custom">SEE OUR ROOMS</div>
-                    </a>                   
-                    <hr style="margin-top:80px;margin-bottom:0px;padding-bottom:0px;">
-                    <div class="col-xs-12">
+                   
+               
+					<!-- Put back in by John -->
+                    <div class="col-xs-12" style="padding-top: 0px;padding-bottom:30px;">
                         <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
-                            <div class="trip-advisor">
-                                <p>Certificate of Excellence<br/>2017</p>
-                                <img src="img/trip-advisor2a.jpg" alt="Trip Advisor Certificate of Excellence 2017" class="img-responsive center-block"/>  
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2015</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2015" class="img-responsive center-block">  
                             </div>
                         </a>
-                    </div>
-
+                        <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2016</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2016" class="img-responsive center-block">  
+                            </div>
+                        </a>
+						  <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2017</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2017" class="img-responsive center-block">  
+                            </div>
+                        </a>
+                        <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2018</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2018" class="img-responsive center-block">  
+                            </div>
+                        </a>
+                    </div> 
             </div>              
         </div>
     </div>
  
-    <div class="container-fluid rooms">
+    <div class="container-fluid rooms wow fadeIn">
         <div class="col-sm-6 no-padding">
             <img src="img/hall01.jpg" alt="" class="img-responsive">
         </div>
@@ -171,36 +185,37 @@
             </div>
         </div>
     </div>
-    <div class="container white-block text-center">
+    <div class="container white-block text-center wow fadeIn">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2" style="padding-bottom: 50px;">
                   
-                        <h3>Great Nights Sleep...</h3>
-                        <p class="">All the rooms feature a large king-size bed, with high quality “Sealy” mattresses, a flat-screen television with all the channels that the Freesat system provides, and tea and coffee making facilities.</p>                  
+                        <h3>The Great Village of Dunfanaghy</h3>
+                        <p class="">Dunfanaghy offers a huge variety of outstanding restaurants,
+                            great bars with live music, all sorts of sporting activities, and is surrounded by some of the most spectacular scenery and beaches that you can find in Ireland..</p>                  
                 </div>      
                 <div class="col-sm-4 col-sm-offset-2">
                     <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
-                        <img src="img/bed0101.jpg" alt="" class="img-responsive">                        
+                        <img src="img/d01.jpg" alt="" class="img-responsive">                        
                     </div>
                 </div>            
                 <div class="col-sm-4">
                     <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
-                        <img src="img/bed0201.jpg" alt="" class="img-responsive">
+                        <img src="img/d02.jpg" alt="" class="img-responsive">
                     </div>
                 </div>            
                 <div class="col-sm-4 col-sm-offset-2">
                     <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
-                        <img src="img/bed0301.jpg" alt="" class="img-responsive">
+                        <img src="img/d03.jpg" alt="" class="img-responsive">
                     </div>
                 </div>            
                 <div class="col-sm-4">
                     <div class="room-box round-corners" style="max-height:200px;overflow:hidden;">
-                        <img src="img/bed0401.jpg" alt="" class="img-responsive">
+                        <img src="img/d04.jpg" alt="" class="img-responsive">
                     </div>
                 </div>            
             </div>
     </div>
-    <div class="container-fluid breakfast">
+    <div class="container-fluid breakfast wow fadeIn">
             <div class="col-sm-6 no-padding col-sm-push-6">
                 <img src="img/intro04.jpg" alt="" class="img-responsive">
             </div>
@@ -215,32 +230,37 @@
             </div>
     </div>
 
-    <div class="container-fluid text-center icons">
+    <div class="container-fluid text-center icons wow fadeIn">
             <div class="col-sm-3">
                     <div class="icon-wrapper"><i class="fa fa-bed custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
                     <h4>Luxury Rooms</h4>                     
-                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                    <p>Have a tranquil nights sleep, on a luxurious matress, in a stylist room.</p>
             </div>            
             <div class="col-sm-3">
                     <div class="icon-wrapper"><i class="fa fa-cutlery custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
                     <h4>Great Breakfast</h4>                     
-                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                    <p>Choose from a superb breakfast menu which uses the best of local produce.</p>
             </div>            
             <div class="col-sm-3">
                     <div class="icon-wrapper"><i class="fa fa-location-arrow custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
                     <h4>Fantastic Location</h4>                     
-                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                    <p>The beautiful northwest of Donegal and the wonderful Wild Atlantic Way are on our doorstep.</p>
             </div>            
             <div class="col-sm-3">
                     <div class="icon-wrapper"><i class="fa fa-home custom-icon"><span class="fix-editor">&nbsp;</span></i></div>
                     <h4>Beautiful Cottage</h4>                     
-                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                    <p>A traditional Donegal cottage and outbuildings, filled with modern day luxury.</p>
             </div>            
     </div>
-    <div class="parallax"></div>
-    <footer class="container">
-            <div class="col-xs-6 text-right" style="padding-right: 20px;">
-                <h4>Tatu Anseo<br/>Bed & Breakfast</h4>
+    <div class="parallax wow fadeIn"></div>
+    <footer class="container-fluid text-center wow fadeIn">
+        <div class="col-sm-4">
+            <h4><span class="green-line">Anseo B&B</span></h4>
+            <p style="font-size:0.9em">We hope you have found all of the information you need on our website.  If however you need any more information about facilities, location or anything really, please do get in touch</p>
+            <p>Copyright 2018 &copy; Anseo Bed and Breakfast</p>
+        </div>        
+        <div class="col-sm-4">
+            <h4><span class="green-line">Contact Details</span></h4>
                 <p>Dunfanaghy, County Donegal
                         <span class="fa-stack">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
@@ -253,41 +273,47 @@
                             <i class="fa fa-phone fa-stack-1x"></i>
                     </span>
                 </p>
-                <p>info@tatuanseo.com
+                <p>lisa@tatuanseo.com
                     <span class="fa-stack">
                             <i class="fa fa-square-o fa-stack-2x"></i>
                             <i class="fa fa-envelope fa-stack-1x"></i>
                     </span>
-                </p>
-            </div>
-            <div class="col-xs-6 text-left" style="padding-left: 20px;">
-                <h4 style="padding-bottom: 20px;">Useful Links</h4>
-                <a href="rooms.html">
-                    <p>Our Rooms</p>
-                </a>
-                <a href="breakfast.html">
-                    <p>Breakfast</p>
-                </a>
-                <a href="rates.html">
-                    <p>Rates</p>
-                </a>
-                <a href="contact.html">
-                    <p>Contact</p>
-                </a>                                          
-            </div>
-        </footer>
+                </p>    
+        </div>
+        <div class="col-sm-4">
+                <h4><span class="green-line">Useful Links</span></h4>                
+                <p><a href="http://www.dunfanaghy.info" target="_blank">Dunfanaghy Village Website</a></p>               
+                <p> <a href="http://www.thebandfestival.com/" target="_blank">Dunfanaghy Bluegrass Festival</a></p>                             
+                <p><a href="https://www.facebook.com/ShackCoffee.ie/" target="_blank">The Shack Coffee House</a></p>                           
+                <p><a href="index.html#about">Book Anseo B&B</a></p>    
+        </div>
+    </footer>
 
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/SmoothScroll.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/SmoothScroll.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/pickadate/picker.js"></script>
+    <script src="js/pickadate/picker.date.js"></script>
+    <script src="js/main.js"></script>
     <script>
             $('#carouselFade').carousel({
                 pause: "false"
             });
+            $('.datepicker').pickadate({
+                formatSubmit: 'yyyy-mm-dd',
+               // hiddenSuffix: '_hidden',
+                hiddenName: true
+            });
           //  $('#carouselFade').carousel('pause');
+    </script>
+    <script>
+        $(window).bind("load", function () {
+            $('#f2b_search_form').addClass('form');
+        $('#checkInDisplay').addClass('form-control');
+        });
+
     </script>
 </body>
 

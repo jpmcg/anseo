@@ -1,3 +1,7 @@
+/*
+main-green: #B6BC96
+*/
+
 body, html, .container-fluid h3 {
 	font-family: 'Roboto', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -21,6 +25,14 @@ hr{
 	padding-bottom: 40px;
 }
 
+h1{
+	padding-top: 10px;
+	font-size: 36pt;
+	font-weight: 400;
+	color: #000;
+	padding-bottom: 40px;
+}
+
 p{
 	font-size: 15pt;
 }
@@ -36,11 +48,15 @@ p{
 	border-bottom: 1px solid #B6BC96;
 }
 #menu a.navbar-brand {
-	font-size: 22px;
+	font-size: 24px;
 	color: #555;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	border-bottom: 3px solid #B6BC96;
+	padding-right: 5px;
+	padding-left: 5px;
+	
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -57,6 +73,13 @@ p{
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #ccc;
 }
+
+#menu.navbar-default .navbar-nav > li > a.active{
+	border-bottom: 3px solid #B6BC96;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
 .xon {
 	background-color: #363636 !important;
 	padding: 0 !important;
@@ -113,6 +136,11 @@ nav#menu.navbar-default.on{
 	margin-top: 20px;
 	transition: all 0.5s;
 }
+
+.btn-custom:hover,.btn-custom:active, .btn-custom:active:focus{
+	background-color: #959D6F;
+	color: #fff;
+}
 /* header */
 
 .intro {
@@ -130,6 +158,9 @@ nav#menu.navbar-default.on{
 .intro .overlay {
 	/* background: rgba(255,255,255,0.1); */
 }
+.dunfanaghy-overlay {
+	background: rgba(0,0,0,0.15); 
+}
 .intro h1 {
 	color: #fff;
 	font-size: 20px;
@@ -139,6 +170,15 @@ nav#menu.navbar-default.on{
 	text-transform: uppercase;
 }
 .intro h2 {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.intro h3 {
 	color: #fff;
 	font-size: 36px;
 	font-weight: 700;
@@ -162,10 +202,11 @@ nav#menu.navbar-default.on{
 }
 .intro p {
 	color: #fff;
-	font-size: 24px;
-	font-weight: 300;
-	margin-top: 10px;
-	margin-bottom: 40px;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
 .carousel-caption p {
@@ -182,13 +223,96 @@ header .intro-text {
 	text-align: center;
 }
 
+/**** Trip advisor **/
+.trip-advisor{
+	display: inline-block;
+	border: 1px solid #333;
+	margin-bottom: 5px;
+}
+
+.trip-advisor > p{
+	font: normal 12px Arial,Helvetica,sans-serif;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: -0.12px;
+	color: #000;
+	padding-top: 5px;
+	margin-bottom: 0px;
+}
+
+/* Big Icons */
+
+.custom-icon {
+	background: #B6BC96;
+	/* background: rgba(0, 0, 0, 0.4); */
+	border-radius: 100%;
+	border: 6px solid #fff;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+	color: #fff;
+	display: table-cell;
+	font-size: 45px;
+	height: 60px;
+	padding: 30px;
+	text-align: center;
+	transition: .5s;
+	vertical-align: middle;
+	width: 60px;
+  }
+  .custom-icon:hover {
+	background: rgba(0, 0, 0, 0.6);
+  }
+  .fix-editor {
+	display: none;
+  }
+  .icon-wrapper {
+	display: inline-block;
+  }
+  
+
+
+/* Availability Form */
+
+#availability-form-holder{
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+#checkIn{
+	margin-right: 5px;
+}
+
+#stayLength{
+	margin-right: 5px;
+}
+
+.availability-btn, .availability-btn:active, .availability-btn:focus, .availability-btn:target, .availability-btn:active:focus{
+	background-color: #B6BC96;
+	color: #fff;
+	padding-right:20px;
+	padding-left:20px;
+}
+
+.availability-btn:hover,.availability-btn:active, .availability-btn:active:focus{
+	background-color: #959D6F;
+	color: #fff;
+}
+
+.availability-btn:active:focus{
+	background-color: #727A4B;
+	color: #fff;
+}
+
+#checkIn{
+	background-color: #fff;
+}
+
 /* About */
 .about{
-	padding: 50px 20px 20px 50px;
+	padding: 20px 20px 20px 20px;
 }
 
 .about, .rooms, .breakfast{
-	padding-top: 70px;
+	padding-top: 30px;
 	padding-bottom: 100px;
 }
 
@@ -206,6 +330,11 @@ header .intro-text {
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
+}
+
+.rooms{
+	padding-top: 150px;
+	padding-bottom: 20px;
 }
 
 .breakfast{
@@ -275,6 +404,7 @@ header .intro-text {
 }
 
 footer{
+	background-color: #fff;	
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -287,11 +417,28 @@ footer a:hover{
 	color: #777;
 }
 
+footer p{
+	font-size: 12pt;
+}
+
+footer h4 > .green-line{
+	border-bottom: 1px solid #B6BC96;
+}
 /**** Rooms Page ****/
 
 
 .rooms-intro{
-	background: url(../img/bed0301.jpg) no-repeat center bottom;
+	background: url(../img/bed0401.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+.dunfanaghy-intro{
+	background: url(../img/dlarge01.jpg) no-repeat center bottom;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -310,6 +457,11 @@ footer a:hover{
 	padding: 50px;
 }
 
+.grey-filler{
+	background-color: #F5F5F5;
+	padding: 20px;
+}
+
 .rooms-outer > h4{
 	padding-top: 20px;
 }
@@ -322,6 +474,71 @@ footer a:hover{
 
 .anseo-link:hover{	
 	color: #777;
+}
+
+.room-single p{
+	margin-bottom: 30px;
+}
+
+/**** ROOM 1 ******/
+
+.room1-intro{
+	background: url(../img/studio01.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.room2-intro{
+	background: url(../img/bed0201.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.room3-intro{
+	background: url(../img/bed0304.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.room4-intro{
+	background: url(../img/bed0401.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.rates-intro{
+	background: url(../img/exterior3.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.contact-intro{
+	background: url(../img/bed0203.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.room-single{
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 
 /**** BREAKFAST PAGE *****/
@@ -348,4 +565,21 @@ ul > li{
 .food-image{
 	padding: 0px;
 	border:10px solid #fff;
+}
+
+@media (max-width:767px){
+	.room-info{
+        position:relative;
+        top: 0px;
+        left: 0px;
+    }
+	.breakfast-info{
+        position:relative;
+        top: 0px;
+        left: 0px;
+	}
+	.rooms-main{
+		padding: 5px;
+		padding-top: 20px;
+	}
 }

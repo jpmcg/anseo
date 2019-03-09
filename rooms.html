@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Luxury Accommodation Dunfanaghy - Anseo B&B</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pickadate/classic.css" rel="stylesheet">
+    <link href="css/pickadate/classic.date.css" rel="stylesheet">
+    <link href="css/style.css?v=4" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/wow.js"></script>
+    <script>
+            new WOW().init();
+    </script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,7 +41,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="rooms.html" class="page-scroll">Rooms</a></li>
+                            <li><a href="dunfanaghy.html" class="page-scroll">Dunfanaghy</a></li>
+                            <li><a href="rooms.html" class="active page-scroll">Rooms</a></li>
                              <li><a href="breakfast.html" class="page-scroll">Breakfast</a></li>
                              <li><a href="rates.html" class="page-scroll">Rates</a></li>
                              <!-- <li><a href="#team" class="page-scroll">Team</a></li> -->
@@ -45,15 +53,15 @@
                  </div>
             </nav>
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="wow fadeIn">
         <div class="intro rooms-intro">
             <div class="overlay">
                 <div class="container">
                     <div class="row">
                         <div class="intro-text">
-                            <h2>Our Rooms</h2>
-                            <h1>Luxury Comfort in Dunfanaghy</h1>
-                            <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                            <h3>Our Rooms</h3>
+                            <p>Luxury Comfort in Dunfanaghy</p>
+                            <a href="#about" class="btn btn-custom btn-lg page-scroll">Book Here</a>
                         </div>
                     </div>
                 </div>
@@ -61,98 +69,166 @@
         </div>
     </header>
 
-    <div class="container-fluid about text-center">
+    <div class="container-fluid text-center wow fadeIn" style="padding-top:50px;padding-bottom:30px;">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2" style="padding-bottom:20px;">
-                    <hr>
-                    <h3>Our Rooms</h3>
+            <div class="col-sm-8 col-sm-offset-2">
+                    <h1>Tranquility in Dunfanaghy</h1>
                     <p>We have four double en-suite bedrooms.  Two of the bedrooms are on the ground floor, making access easy for the less mobile. Both of these rooms have double French doors opening out onto separate courtyards.
                     </p>
-                    <hr style="margin-top:80px;margin-bottom:0px;padding-bottom:0px;">
-
-            </div>              
+                    <p>All the rooms are en-suite, feature a large king-size bed, with high quality Sealy mattresses, a flat-screen television, hair dryer, and tea and coffee making facilities.  There is free wifi throughout the house. The Studio also has a small, fully equipped kitchen.</p>
+                    <p>As well as everything you would expect to find in a bedroom, we have strived to provide a desk, or table, where those inclined to do so, might take up their quill, or cursor, and write. Perhaps their forthcoming novel, or poem. Or maybe simply a postcard home.</p>
+                    <p>We have also provided a place in each room, where those inclined, may take up their corkscrew, and enjoy a quiet glass of Beaujolais. And forget about the writing. And everything else.</p>
+                </div>     
+            <div class="col-xs-12" style="padding-top: 30px;">
+                    <img class="img-responsive center-block" style="height:50px;max-height:50px;" src="img/celtic-logo.png" />
+            </div>           
         </div>
     </div>
     <div class="container-fluid rooms-main">
-        <div class="col-sm-5 col-sm-offset-1">
+        <div class="col-sm-5 col-sm-offset-1 wow fadeIn">
             <!-- <a href="/" class="anseo-link"> -->
                 <div class="rooms-outer">
-                    <img class="img-responsive round-corners" src="img/bed0101.jpg">
-                    <h4>Room 1</h4>
-                    <p>Having the doors open during the day, while you are sitting sipping a cup of coffee, or glass of wine, brings a new freshness to the room, as it expands the room out into the courtyard.</p>
-                    <a href="#about" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
+                    <img class="img-responsive round-corners" src="img/studio01.jpg">
+                    <h4>The Studio</h4>
+                    <p>The Studio is on the ground floor and incorporates a dining table, and a small, fully equipped kitchen. It is available for booking all year round, even when the B&B is closed.</p>
+                    <a href="room1.html" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
                 </div>
             <!-- </a> -->
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-5 wow fadeIn">
             <div class="rooms-outer">
                 <img class="img-responsive round-corners" src="img/bed0201.jpg">
-                <h4>Room 2</h4>
-                <p>Having the doors open during the day, while you are sitting sipping a cup of coffee, or glass of wine, brings a new freshness to the room, as it expands the room out into the courtyard.</p>          
-                <a href="#about" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
+                <h4>Bedroom Two</h4>
+                <p>Bedroom Two is also situated on the ground floor for easy access. This bedroom has a larger shower room, making access even easier, and has superb artworks on the wall.</p>          
+                <a href="room2.html" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
             </div>
         </div>
-        <div class="col-sm-5 col-sm-offset-1">
+        <div class="col-sm-5 col-sm-offset-1 wow fadeIn">
             <div class="rooms-outer">
-                <img class="img-responsive round-corners" src="img/bed0301.jpg">
-                <h4>Room 3</h4>
-                <p>Having the doors open during the day, while you are sitting sipping a cup of coffee, or glass of wine, brings a new freshness to the room, as it expands the room out into the courtyard.</p>
-                <a href="#about" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
+                <img class="img-responsive round-corners" src="img/bed0304.jpg">
+                <h4>Bedroom Three</h4>
+                <p>Bedroom Three is on the first floor, with glimpses of Horn Head and the sea in the distance, and now has an additional single bed, so Bedroom Three can accommodate up to three people.</p>
+                <a href="room3.html" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
             </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-5 wow fadeIn">
             <div class="rooms-outer">
                 <img class="img-responsive round-corners" src="img/bed0401.jpg">
-                <h4>Room 4</h4>
-                <p>Having the doors open during the day, while you are sitting sipping a cup of coffee, or glass of wine, brings a new freshness to the room, as it expands the room out into the courtyard.</p>          
-                <a href="#about" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
+                <h4>Bedroom Four</h4>
+                <p>Bedroom Four is on the first floor, with glimpses of Horn Head and the sea in the distance, and is ideal for sitting and writing, or sitting enjoying a glass of wine.</p>          
+                <br/><p></p>
+                <a href="room4.html" class="btn btn-custom btn-lg page-scroll center-block">Learn More</a>
+                
             </div>
         </div>
     </div>
   
-    <footer class="container">
-            <div class="col-xs-6 text-right" style="padding-right: 20px;">
-                <h4>Tatu Anseo<br/>Bed & Breakfast</h4>
-                <p>Dunfanaghy, County Donegal
+    <div id="about" class="container-fluid about text-center wow fadeIn">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2" style="padding-bottom:0px;">    
+                <h4>Check Availability</h4>                   
+                    <div id="availability-form-holder" class="col-xs-12">
+                            <form method="POST" id="availability-form" class="form-inline" action="https://portal.freetobook.com/widget-redir?w_id=8778&w_tkn=pf7ow3xkFhNhMGIwedOBgRsW4pv40mFFXSXcwRxsbhwZnyYoBIZJ7Oa2W2XBT" target="_blank">
+                                    <div class="form-group">
+                                      <label class="sr-only" for="checkIn">Check In Date</label>
+                                      <input type="text" class="datepicker form-control input-lg" id="checkIn" name="checkIn" placeholder="Check In Date...">
+                                    </div>
+                                    <div class="form-group">
+                                      <label class="sr-only" for="stayLength">Number of Nights</label>
+                                      <input type="number" class="form-control input-lg" name="stayLength" id="stayLength" id="exampleInputPassword3" placeholder="Nights...">
+                                    </div>
+                                    <button type="submit" class="btn btn-default input-lg availability-btn">Check Availability</button>
+                            </form>
+                    </div>
+                    <div class="col-xs-12" style="padding-top: 0px;padding-bottom:30px;">
+                        <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2015</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2015" class="img-responsive center-block">  
+                            </div>
+                        </a>
+                        <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2016</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2016" class="img-responsive center-block">  
+                            </div>
+                        </a>
+                          <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2017</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2017" class="img-responsive center-block">  
+                            </div>
+                        </a>
+                        <a class="text-center" target="_blank" href="https://www.tripadvisor.co.uk/Hotel_Review-g212536-d2225803-Reviews-Anseo_B_B-Dunfanaghy_County_Donegal.html">
+                            <div class="trip-advisor" style="margin-right:10px">
+                                <p>Certificate of Excellence<br>2018</p>
+                                <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="Trip Advisor Certificate of Excellence 2018" class="img-responsive center-block">  
+                            </div>
+                        </a>
+                    </div> 
+        </div>              
+    </div>
+</div>
+<div class="container-fluid grey-filler" style="min-height: 0px; margin-top:20px;">
+            
+</div>
+
+    <footer class="container-fluid text-center wow fadeIn">
+            <div class="col-sm-4">
+                <h4><span class="green-line">Anseo B&B</span></h4>
+                <p style="font-size:0.9em">We hope you have found all of the information you need on our website.  If however you need any more information about facilities, location or anything really, please do get in touch</p>
+                <p>Copyright 2018 &copy; Anseo Bed and Breakfast</p>
+            </div>        
+            <div class="col-sm-4">
+                <h4><span class="green-line">Contact Details</span></h4>
+                    <p>Dunfanaghy, County Donegal
+                            <span class="fa-stack">
+                                    <i class="fa fa-square-o fa-stack-2x"></i>
+                                    <i class="fa fa-address-card fa-stack-1x"></i>
+                            </span>
+                    </p>
+                    <p>(+353) 74 91 36 609
                         <span class="fa-stack">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
-                                <i class="fa fa-address-card fa-stack-1x"></i>
+                                <i class="fa fa-phone fa-stack-1x"></i>
                         </span>
-                </p>
-                <p>(+353) 74 91 36 609
-                    <span class="fa-stack">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-phone fa-stack-1x"></i>
-                    </span>
-                </p>
-                <p>info@tatuanseo.com
-                    <span class="fa-stack">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x"></i>
-                    </span>
-                </p>
+                    </p>
+                    <p>info@tatuanseo.com
+                        <span class="fa-stack">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x"></i>
+                        </span>
+                    </p>    
             </div>
-            <div class="col-xs-6 text-left" style="padding-left: 20px;">
-                <h4 style="padding-bottom: 20px;">Useful Links</h4>
-                <a href="rooms.html">
-                    <p>Our Rooms</p>
-                </a>
-                <a href="breakfast.html">
-                    <p>Breakfast</p>
-                </a>
-                <a href="rates.html">
-                    <p>Rates</p>
-                </a>
-                <a href="contact.html">
-                    <p>Contact</p>
-                </a>                                          
+            <div class="col-sm-4">
+                    <h4><span class="green-line">Useful Links</span></h4>                
+                    <p><a href="http://www.dunfanaghy.info" target="_blank">Dunfanaghy Village Website</a></p>               
+                    <p> <a href="http://www.thebandfestival.com/" target="_blank">Dunfanaghy Bluegrass Festival</a></p>                             
+                    <p><a href="https://www.facebook.com/ShackCoffee.ie/" target="_blank">The Shack Coffee House</a></p>                           
+                    <p><a href="index.html#about">Book Anseo B&B</a></p>       
             </div>
         </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/pickadate/picker.js"></script>
+    <script src="js/pickadate/picker.date.js"></script>
     <script src="js/main.js"></script>
+    <script>
+            $('.datepicker').pickadate({
+                formatSubmit: 'yyyy-mm-dd',
+               // hiddenSuffix: '_hidden',
+                hiddenName: true
+            });
+          //  $('#carouselFade').carousel('pause');
+    </script>
+    <script>
+        $(window).bind("load", function () {
+            $('#f2b_search_form').addClass('form');
+            $('#checkInDisplay').addClass('form-control');
+        });
+    </script>
 </body>
 
 </html>
